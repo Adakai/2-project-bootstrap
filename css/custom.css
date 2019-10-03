@@ -3,7 +3,8 @@
   width: 250px;
 }
 .my-imgs {
-  height: 900px;
+  height: 750px;
+  object-fit: cover;
 }
 .navbar {
   background-color: #ffffff00;
