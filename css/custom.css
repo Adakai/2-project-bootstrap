@@ -7,8 +7,9 @@
   object-fit: cover;
 }
 .navbar {
-  background-color: #ffffff00;
+  background-color: #f8f9fa85;
 }
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: #3e2101;
 }
@@ -28,6 +29,7 @@ h5, h5 {
 
 p {
   font-size: 1.7rem;
+  color: #fff;
 }
 
 .card-img {
@@ -39,4 +41,14 @@ p {
   margin-top: 200px;
   display: flex;
   justify-content: center;
+}
+
+.jumbotron {
+  background-color: #eab881; 
+}
+.display-4 {
+  color: #fff;
+}
+.display-4 .my-display-4 {
+  
 }
