@@ -34,7 +34,6 @@ p {
 
 .card-img {
   height: 450px;
-  object-fit: cover;
 }
 
 .card-title {
@@ -44,11 +43,38 @@ p {
 }
 
 .jumbotron {
-  background-color: #eab881; 
+  background-color: #eab881;
+  margin: 0;
 }
 .display-4 {
   color: #fff;
 }
-.display-4 .my-display-4 {
-  
+.footer {
+  height: 100px;
+  background-color: #eab881;
+}
+.parallax {
+   /* The image used */
+   background-image: url("../img/dream.jpg");
+
+   /* Set a specific height */
+   min-height: 500px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.img-one {
+  background-image: url("../img/carousel/teepee.jpg");
+
+   /* Set a specific height */
+   min-height: 800px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
