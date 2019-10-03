@@ -1,0 +1,94 @@
+@import "_contact.scss";
+@import "_footer.scss";
+@import "_home.scss";
+@import "_mixins.scss";
+@import "_services.scss";
+@import "_varibles.scss";
+
+ 
+// Home styles that overwrite bootstrap
+
+.navbar {
+    background-color: #f8f9fa85;
+    @include box-shadow-one();
+}
+  
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: $sec-color;
+}
+  
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.5em;
+    color: $sec-slight-color;
+}
+  
+.carousel-caption {
+    margin-bottom: 250px;
+}
+  
+h5, h5 {
+    font-size: 3.5rem;
+}
+  
+p {
+    font-size: 1.7rem;
+    color: $white;
+}
+
+.card {
+    position: inherit;
+}
+
+.card-img {
+    height: 450px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.jumbotron {
+    @include box-shadow-one();
+    position:relative;
+    background-color: $main-color;
+    margin: 0;
+    text-align: center;
+}
+
+.display-4 {
+    color: $white;
+}
+
+.btn-secondary {
+    background-color: $sec-light-color;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.btn-secondary:hover {
+    background-color: $sec-color;
+}
+
+// services page overwrite for bootstrap
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: static;
+    height: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-title {
+        margin-top: 150px;
+    }
+}
+

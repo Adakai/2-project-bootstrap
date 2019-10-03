@@ -1,0 +1,81 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+
+.footer {
+    @include box-shadow-one();
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 120px;
+    width: 100%;
+    background-color: $main-color;
+  
+    .footer-name {
+      display:flex;
+      align-items: center;
+      height: 100%;
+      width: 40%;
+
+      p {
+        text-align: center;
+        font-size: 1.5em;
+        color: $sec-color;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  
+    .footer-icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 40%;
+  
+      .right {
+          margin-right: 30px;
+      }
+
+      .fa-facebook-square {
+        color: $sec-light-color;
+      }
+  
+      .fa-facebook-square, .fa-twitter-square {
+        color: $sec-light-color;
+      }
+  
+      .fa-facebook-square:hover {
+        color: #4267b2;
+      }
+  
+      .fa-twitter-square:hover {
+       color: #37a1f2;
+      }
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .footer {
+        .footer-name {
+            width: 50%;
+            p {
+                font-size: 1em;
+            }
+        }
+        .footer-icons {
+            width: 30%;
+            .fa-facebook-square, .fa-twitter-square {
+                font-size: 2em;
+            }
+          }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        .footer-name {
+            p {
+                font-size: .7em;
+            }
+        }
+    }
+}

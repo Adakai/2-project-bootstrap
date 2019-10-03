@@ -1,0 +1,36 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+
+#my_logo{
+    width: 250px;
+}
+
+.parallax-home {
+    @include parallex();
+    background-image: url("../img/home/home.jpg");
+    min-height: 500px;
+}
+.img-slider {
+    @include parallex();
+    min-height: 800px;
+}
+
+.img-one-slider {
+    background-image: url("../img/home/carousel/teepee.jpg");
+}
+
+.img-two-slider {
+    background-image: url("../img/home/carousel/dreamcatcher.jpg");
+}
+
+.img-three-slider {
+    background-image: url("../img/home/carousel/dancer.jpg");
+}
+
+.button {
+    @include flex-jcenter-acenter();
+
+    button {
+        @include box-shadow-btn();
+    }
+}

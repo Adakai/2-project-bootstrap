@@ -1,0 +1,71 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+
+
+.img-services {
+    @extend .img-slider;
+    @include parallex();
+    background-image: url("../img/services-page/services.jpg");
+    min-height: 0;
+    height: 400px;
+    z-index: 1;
+}
+
+h1 .title-services {
+    margin-top: 0;
+}
+
+.img-services-small {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    width:150px;height:150px;
+    box-shadow: 0px 5px 10px 4px #2a2a2a78;
+}
+
+.parallax-services {
+    @include parallex();
+    background-image: url("../img/services-page/dreamcatchers.jpeg");
+    min-height: 200px;
+}
+
+#overlay_services {
+    height: 315px;
+}
+
+#jumbotron_services{
+    @include flex-jcenter-acenter();
+    background-color: $sec-light-color;
+    box-shadow: none;
+    position: inherit;
+    height: 225px;
+
+    h1 {
+        margin: 20px 0;
+        color: $main-color;
+    }
+}
+
+.container-services {
+    @include flex-jcenter-acenter();
+}
+
+@media screen and (max-width: 900px) {
+    #jumbotron_services{
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-services {
+        @include flex-col-center-center();
+    }
+    #jumbotron_services{
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

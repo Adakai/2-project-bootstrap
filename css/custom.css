@@ -1,80 +1,210 @@
+.footer {
+  box-shadow: 0px 4px 10px 4px #2a2a2a78;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 120px;
+  width: 100%;
+  background-color: #eab881; }
+  .footer .footer-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 40%; }
+    .footer .footer-name p {
+      text-align: center;
+      font-size: 1.5em;
+      color: #3e2101;
+      margin: 0;
+      padding: 0; }
+  .footer .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%; }
+    .footer .footer-icons .right {
+      margin-right: 30px; }
+    .footer .footer-icons .fa-facebook-square {
+      color: #3e2101cc; }
+    .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
+      color: #3e2101cc; }
+    .footer .footer-icons .fa-facebook-square:hover {
+      color: #4267b2; }
+    .footer .footer-icons .fa-twitter-square:hover {
+      color: #37a1f2; }
 
-#my_logo{
+@media screen and (max-width: 900px) {
+  .footer .footer-name {
+    width: 50%; }
+    .footer .footer-name p {
+      font-size: 1em; }
+  .footer .footer-icons {
+    width: 30%; }
+    .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
+      font-size: 2em; } }
+
+@media screen and (max-width: 600px) {
+  .footer .footer-name p {
+    font-size: .7em; } }
+
+#my_logo {
+  width: 250px; }
+
+.parallax-home {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/home/home.jpg");
+  min-height: 500px; }
+
+.img-slider, .img-services {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px; }
+
+.img-one-slider {
+  background-image: url("../img/home/carousel/teepee.jpg"); }
+
+.img-two-slider {
+  background-image: url("../img/home/carousel/dreamcatcher.jpg"); }
+
+.img-three-slider {
+  background-image: url("../img/home/carousel/dancer.jpg"); }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button button {
+    box-shadow: 0px 1px 8px 2px #2a2a2a78; }
+
+.img-services {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/services-page/services.jpg");
+  min-height: 0;
+  height: 400px;
+  z-index: 1; }
+
+h1 .title-services {
+  margin-top: 0; }
+
+.img-services-small {
   width: 250px;
-}
-.my-imgs {
-  height: 765px;
-  object-fit: cover;
-}
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 5px 10px 4px #2a2a2a78; }
+
+.parallax-services {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/services-page/dreamcatchers.jpeg");
+  min-height: 200px; }
+
+#overlay_services {
+  height: 315px; }
+
+#jumbotron_services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e2101cc;
+  box-shadow: none;
+  position: inherit;
+  height: 225px; }
+  #jumbotron_services h1 {
+    margin: 20px 0;
+    color: #eab881; }
+
+.container-services {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (max-width: 900px) {
+  #jumbotron_services h1 {
+    font-size: 3em; } }
+
+@media screen and (max-width: 600px) {
+  .container-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #jumbotron_services h1 {
+    font-size: 2em; } }
+
 .navbar {
   background-color: #f8f9fa85;
-}
+  box-shadow: 0px 4px 10px 4px #2a2a2a78; }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: #3e2101;
-}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #3e2101; }
 
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.5em;
-  color: #3e210169;
-}
+  color: #3e210169; }
 
 .carousel-caption {
-  margin-bottom: 250px;
-}
+  margin-bottom: 250px; }
 
 h5, h5 {
-  font-size: 3.5rem;
-}
+  font-size: 3.5rem; }
 
 p {
   font-size: 1.7rem;
-  color: #fff;
-}
+  color: #fff; }
+
+.card {
+  position: inherit; }
 
 .card-img {
-  height: 450px;
-}
+  height: 450px; }
 
 .card-title {
+  text-align: center;
   margin-top: 200px;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+
+.carousel-item {
+  position: relative; }
 
 .jumbotron {
+  box-shadow: 0px 4px 10px 4px #2a2a2a78;
+  position: relative;
   background-color: #eab881;
   margin: 0;
-}
+  text-align: center; }
+
 .display-4 {
-  color: #fff;
-}
-.footer {
-  height: 100px;
-  background-color: #eab881;
-}
-.parallax {
-   /* The image used */
-   background-image: url("../img/dream.jpg");
+  color: #fff; }
 
-   /* Set a specific height */
-   min-height: 500px; 
- 
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-.img-one {
-  background-image: url("../img/carousel/teepee.jpg");
+.btn-secondary {
+  background-color: #3e2101cc;
+  padding: 15px;
+  font-size: 1.2em; }
 
-   /* Set a specific height */
-   min-height: 800px; 
- 
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+.btn-secondary:hover {
+  background-color: #3e2101; }
+
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: static;
+  height: 500px; }
+
+@media screen and (max-width: 600px) {
+  .card-title {
+    margin-top: 150px; } }
