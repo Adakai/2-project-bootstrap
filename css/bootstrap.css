@@ -6359,7 +6359,7 @@ a.close.disabled {
 }
 
 .carousel-indicators {
-  position: absolute;
+  position: absolute;mr-3
   right: 0;
   bottom: 0;
   left: 0;
