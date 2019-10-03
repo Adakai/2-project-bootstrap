@@ -186,6 +186,8 @@ p {
   background-color: #eab881;
   margin: 0;
   text-align: center; }
+  .jumbotron hr {
+    border-top: 5px solid rgba(0, 0, 0, 0.1); }
 
 .display-4 {
   color: #fff; }

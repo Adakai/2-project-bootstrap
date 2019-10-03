@@ -60,6 +60,9 @@ p {
     background-color: $main-color;
     margin: 0;
     text-align: center;
+    hr {
+        border-top: 5px solid rgba(0,0,0,.1)
+    }
 }
 
 .display-4 {
