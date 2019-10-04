@@ -54,6 +54,12 @@ p {
     position: relative;
 }
 
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+
 .jumbotron {
     @include box-shadow-one();
     position:relative;
