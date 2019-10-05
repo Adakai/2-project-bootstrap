@@ -1,0 +1,49 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+
+
+.img-contact {
+    @extend .img-services;
+    background-image: url("../img/contacts-page/contact.jpg");
+}
+#jumbotron_services {
+    height: 225px;
+
+    h1 {
+        margin: 20px 0;
+    }
+}
+
+.img-contact-form {
+    // @extend .img-services;
+    @include flex-jcenter-acenter();
+    @include parallex();
+    background-image: url("../img/contacts-page/form.jpg");
+    height: 1000px;
+}
+
+#form_contact {
+    @include box-shadow-one();
+    background-color: $main-color;
+    height: 525px;
+    padding: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    #jumbotron_contact{
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-services {
+        @include flex-col-center-center();
+    }
+    #jumbotron_contact{
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

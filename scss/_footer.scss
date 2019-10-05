@@ -55,6 +55,8 @@
 
 @media screen and (max-width: 900px) {
     .footer {
+      height: 90px;
+
         .footer-name {
             width: 50%;
             p {
@@ -72,6 +74,8 @@
 
 @media screen and (max-width: 600px) {
     .footer {
+      height: 70px;
+
         .footer-name {
             p {
                 font-size: .7em;
@@ -79,3 +83,15 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

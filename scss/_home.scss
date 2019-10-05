@@ -1,9 +1,6 @@
 @import "_varibles.scss";
 @import "_mixins.scss";
 
-#my_logo{
-    width: 250px;
-}
 
 .parallax-home {
     @include parallex();

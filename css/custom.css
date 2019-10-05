@@ -34,21 +34,22 @@
       color: #37a1f2; }
 
 @media screen and (max-width: 900px) {
-  .footer .footer-name {
-    width: 50%; }
-    .footer .footer-name p {
-      font-size: 1em; }
-  .footer .footer-icons {
-    width: 30%; }
-    .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
-      font-size: 2em; } }
+  .footer {
+    height: 90px; }
+    .footer .footer-name {
+      width: 50%; }
+      .footer .footer-name p {
+        font-size: 1em; }
+    .footer .footer-icons {
+      width: 30%; }
+      .footer .footer-icons .fa-facebook-square, .footer .footer-icons .fa-twitter-square {
+        font-size: 2em; } }
 
 @media screen and (max-width: 600px) {
-  .footer .footer-name p {
-    font-size: .7em; } }
-
-#my_logo {
-  width: 250px; }
+  .footer {
+    height: 70px; }
+    .footer .footer-name p {
+      font-size: .7em; } }
 
 .parallax-home {
   background-attachment: fixed;
@@ -58,7 +59,7 @@
   background-image: url("../img/home/home.jpg");
   min-height: 500px; }
 
-.img-slider, .img-services {
+.img-slider, .img-services, .img-contact {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -81,15 +82,10 @@
   .button button {
     box-shadow: 0px 1px 8px 2px #2a2a2a78; }
 
-.img-services {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.img-services, .img-contact {
   background-image: url("../img/services-page/services.jpg");
   min-height: 0;
-  height: 400px;
-  z-index: 1; }
+  height: 400px; }
 
 h1 .title-services {
   margin-top: 0; }
@@ -143,6 +139,47 @@ h1 .title-services {
     align-items: center; }
   #jumbotron_services h1 {
     font-size: 2em; } }
+
+.img-contact {
+  background-image: url("../img/contacts-page/contact.jpg"); }
+
+#jumbotron_services {
+  height: 225px; }
+  #jumbotron_services h1 {
+    margin: 20px 0; }
+
+.img-contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/contacts-page/form.jpg");
+  height: 1000px; }
+
+#form_contact {
+  box-shadow: 0px 4px 10px 4px #2a2a2a78;
+  background-color: #eab881;
+  height: 525px;
+  padding: 35px; }
+
+@media screen and (max-width: 900px) {
+  #jumbotron_contact h1 {
+    font-size: 3em; } }
+
+@media screen and (max-width: 600px) {
+  .container-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #jumbotron_contact h1 {
+    font-size: 2em; } }
+
+#my_logo {
+  width: 250px; }
 
 .navbar {
   background-color: #f8f9fa85;
@@ -200,10 +237,37 @@ p {
 .btn-secondary {
   background-color: #3e2101cc;
   padding: 15px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  border: none; }
 
 .btn-secondary:hover {
   background-color: #3e2101; }
+
+@media screen and (max-width: 900px) {
+  #my_logo {
+    width: 190px; }
+  h5, h5 {
+    font-size: 2.5rem; }
+  p {
+    font-size: 1.4rem;
+    color: #fff; }
+  .display-4 {
+    font-size: 2.2em; }
+  .lead {
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 600px) {
+  #my_logo {
+    width: 175px; }
+  h5, h5 {
+    font-size: 1.8rem; }
+  p {
+    font-size: 1rem;
+    color: #fff; }
+  .display-4 {
+    font-size: 1.8em; }
+  .lead {
+    font-size: 1em; } }
 
 .card-img-overlay {
   display: flex;
@@ -211,7 +275,3 @@ p {
   align-content: center;
   position: static;
   height: 500px; }
-
-@media screen and (max-width: 600px) {
-  .card-title {
-    margin-top: 150px; } }

@@ -4,11 +4,9 @@
 
 .img-services {
     @extend .img-slider;
-    @include parallex();
     background-image: url("../img/services-page/services.jpg");
     min-height: 0;
     height: 400px;
-    z-index: 1;
 }
 
 h1 .title-services {
