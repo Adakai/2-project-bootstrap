@@ -282,7 +282,9 @@ p {
   .display-4 {
     font-size: 2.2em; }
   .lead {
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+  #modal_title {
+    font-size: 2.2em; } }
 
 @media screen and (max-width: 600px) {
   #my_logo {
@@ -295,7 +297,9 @@ p {
   .display-4 {
     font-size: 1.8em; }
   .lead {
-    font-size: 1em; } }
+    font-size: 1em; }
+  #modal_title {
+    font-size: 1.8em; } }
 
 .card-img-overlay {
   display: flex;
