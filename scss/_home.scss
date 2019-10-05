@@ -31,3 +31,36 @@
         @include box-shadow-btn();
     }
 }
+.modal {
+    top: 50px;
+}
+.modal-content {
+    @include box-shadow-one();
+    width: 100%;
+}
+
+#form_home_modal {
+    background-color: $main-color;
+    height: 375px;
+}
+
+.modal-header {
+    background-color: $main-color;
+    color: $white;
+    font-size: 1em;
+    .modal-title {
+        width: 100%;
+        text-align: center;
+    }
+}
+#modal_title {
+    font-size: 3em;
+}
+
+.modal-body {
+    background-color: $main-color;
+}
+
+.modal-footer {
+    background-color: $main-color;
+}

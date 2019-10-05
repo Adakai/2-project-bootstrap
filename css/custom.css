@@ -82,6 +82,34 @@
   .button button {
     box-shadow: 0px 1px 8px 2px #2a2a2a78; }
 
+.modal {
+  top: 50px; }
+
+.modal-content {
+  box-shadow: 0px 4px 10px 4px #2a2a2a78;
+  width: 100%; }
+
+#form_home_modal {
+  background-color: #eab881;
+  height: 375px; }
+
+.modal-header {
+  background-color: #eab881;
+  color: #fff;
+  font-size: 1em; }
+  .modal-header .modal-title {
+    width: 100%;
+    text-align: center; }
+
+#modal_title {
+  font-size: 3em; }
+
+.modal-body {
+  background-color: #eab881; }
+
+.modal-footer {
+  background-color: #eab881; }
+
 .img-services, .img-contact {
   background-image: url("../img/services-page/services.jpg");
   min-height: 0;

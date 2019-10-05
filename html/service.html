@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 
     <title>Native American Addiction Recovery Center</title>
+
   </head>
   <body>
     
@@ -31,13 +32,11 @@
         </ul>
       </div>
     </nav>
-
     <div class="card bg-dark text-white img-services">
       <div class="card-img-overlay">
           <h5 class="card-title title-services">SERIVCES</h5>
       </div>
     </div>
-
     <div class="jumbotron jumbotron-fluid">
       <div class="container container-services">
         <img src="../img/services-page/sage.jpeg" alt="..." class="rounded-circle img-services-small">
@@ -47,16 +46,48 @@
         </div>
       </div>
     </div>
-
     <div class="card bg-dark text-white parallax-services">
-        <!-- <img src="../img/services.jpg" class="card-img" alt="..."> -->
-          <div class="card-img-overlay" id="overlay_services">
-            <div class="button">
-              <button type="button" class="btn btn-secondary">Free Assessment</button>
+        <div class="card-img-overlay" id="overlay_services">
+          <div class="button">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">Free Assessment</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal_title">Free Assessment</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="container">
+                <div id="form_home_modal">
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Full Name</label>
+                    <input type="text" class="form-control" placeholder="John Smith">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="JohnSmith@example.com">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label>Enter Your Message Below</label>
+                    <textarea class="form-control" rows="5" placeholder="Enter your message here"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-secondary">Submit Form</button>
             </div>
           </div>
-      </div>
-
+       </div>
+    </div>
     <div class="jumbotron jumbotron-fluid">
         <div class="container container-services">
           <div class="container">
@@ -66,30 +97,26 @@
           <img src="../img/services-page/sage-sweatgrass.jpg" alt="..." class="rounded-circle img-services-small">
         </div>
       </div>
-
       <div class="jumbotron jumbotron-fluid" id="jumbotron_services">
-          <div class="container">
-              <h1 class="display-4">Contact Us Today</h1>
-              <h1 class="display-4">1-800-555-HEAL</h1>
-          </div>      
+        <div class="container">
+            <h1 class="display-4">Contact Us Today</h1>
+            <h1 class="display-4">1-800-555-HEAL</h1>
+        </div>      
       </div>
-
       <div class="footer">
-          <div class="footer-name"><p>&copy; NAARC. Rights Reserved.</p></div>
+        <div class="footer-name"><p>&copy; NAARC. Rights Reserved.</p></div>
           <div class="footer-icons">
-              <div class="facebook-icon right">
-                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-              </div>
-              <div class="twitter-icon">
-                  <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
-              </div>
+            <div class="facebook-icon right">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+            </div>
+            <div class="twitter-icon">
+                <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
+            </div>
           </div>
       </div>
-
-    
-
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
   </body>
 </html>
